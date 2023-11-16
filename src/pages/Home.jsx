@@ -4,9 +4,11 @@ import backgroundVideo from '../assets/images/colorfulwaves.mp4';
 export default function Home() {
     return (
         <div className="homePage">
-            <video autoPlay loop muted className="video">
-                <source src={backgroundVideo} type='video/mp4'></source>
-            </video>
+            <div className='video-container'>
+                <video autoPlay loop muted className="video">
+                    <source src={backgroundVideo} type='video/mp4'></source>
+                </video>
+            </div>
             <div className="overlay">
                 <div className="inner">
                     <h1>Molly Starnes</h1>
