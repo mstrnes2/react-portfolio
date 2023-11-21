@@ -1,8 +1,10 @@
+import '../index.css';
+
 export default function About() {
     return (
-        <div>
-            <h1>About Me</h1>
-            <p>My name is Molly and I am an up and coming full stack web developer! You can view my projects in the projects tab. I have learned languages like HTML, CSS, JavaScript. I have used packages such as node.js, react, express, MySQL, and MongoDB. Please contact me for any questions or comments!</p>
+        <div className = 'aboutMePage'>
+            <h1 className='aboutHeader'>About Me</h1>
+            <p className='aboutSection'>Hello, I'm Molly, a full-stack web developer proficient in HTML, CSS, and JavaScript, with hands-on experience in frameworks like Node.js, React, and Express, as well as databases including MySQL and MongoDB. I thrive on solving challenges and creating seamless, user-centric digital experiences. Committed to clean and maintainable code, I bring a problem-solving mindset and a passion for continuous learning to every project. Let's collaborate and bring your digital ideas to life!</p>
         </div>
     );
 }

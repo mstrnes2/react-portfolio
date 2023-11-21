@@ -1,5 +1,5 @@
 import '../home.css';
-import backgroundVideo from '../assets/images/colorfulwaves.mp4';
+import backgroundVideo from '../assets/images/water.mp4';
 
 export default function Home() {
     return (
@@ -11,8 +11,8 @@ export default function Home() {
             </div>
             <div className="overlay">
                 <div className="inner">
-                    <h1>Molly Starnes</h1>
-                    <h2>Full-Stack Web Developer</h2>
+                    <h1 className="name">Molly Starnes</h1>
+                    <h2 className="title">Full-Stack Web Developer</h2>
                 </div>
             </div>
         </div>

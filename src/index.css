@@ -1,9 +1,29 @@
-*{
-  margin: 0;
-  padding: 0;
+.navName{
+  color: #dad7cd;
+  text-shadow: 5px 5px 5px black;
+}
+.nav-bar{
+  display: flex;
+  background-color: #344e41;
+  justify-content: space-between;
+}
+.nav-bar .navLinks a.nav-link {
+  color: #dad7cd;
 }
 
-html, body, #root, main {
-  height: 100vh;
-  overflow: hidden;
+a.nav-link:hover {
+  color: rgb(252, 0, 0);
+  text-shadow: 10px 10px 10px black;
+}
+
+.aboutMePage {
+  background-color: #588157;
+  color: #dad7cd;
+  justify-content: center;
+  padding: 50px;
+  margin: 100px;
+}
+
+.aboutHeader {
+  text-align: center;
 }
