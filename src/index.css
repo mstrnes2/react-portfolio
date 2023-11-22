@@ -4,7 +4,7 @@
 }
 .nav-bar{
   display: flex;
-  background-color: #344e41;
+  background-color: #4d7460;
   justify-content: space-between;
 }
 .nav-bar .navLinks a.nav-link {
@@ -12,18 +12,57 @@
 }
 
 a.nav-link:hover {
-  color: rgb(252, 0, 0);
   text-shadow: 10px 10px 10px black;
 }
 
 .aboutMePage {
-  background-color: #588157;
+  background-color: #4d7460;
   color: #dad7cd;
   justify-content: center;
   padding: 50px;
   margin: 100px;
+  box-shadow: 10px 10px 10px black;
 }
 
 .aboutHeader {
   text-align: center;
+}
+
+#root, html {
+  background-color: #8B9094;
+}
+
+footer {
+  background-color: #4d7460;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.icons img {
+  width: 30px;
+  height: 30px;
+  margin: 10px;
+}
+
+.icons img:hover {
+  filter: brightness(1.5);
+}
+
+.icons {
+  display: flex;
+  justify-content: center;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+.contactForm {
+  background-color: #4d7460;
+  color: #dad7cd;
+  justify-content: center;
+  padding: 20px;
+  margin: 50px;
+  box-shadow: 10px 10px 10px black;
 }

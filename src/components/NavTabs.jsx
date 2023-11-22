@@ -15,6 +15,7 @@ function NavTabs() {
     // Show the navbar when the user is actively moving the mouse
     const handleMouseMove = () => {
         setNavVisible(true);
+        document.body.classList.add('no-scroll');
     };
 
     // Hide the navbar after a certain period of inactivity
