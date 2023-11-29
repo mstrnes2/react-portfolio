@@ -1,8 +1,30 @@
-export default function Home() {
+import PDF from '../assets/MollyResume.pdf';
+import { useState } from 'react';
+
+export default function Resume() {
+    const [showPDF, setShowPDF] = useState(false);
+    const handleClick = () => {
+        setShowPDF(!showPDF);
+    }
     return (
-        <div>
-            <h1>Molly Starnes</h1>
-            <h2>Full-Stack Web Developer</h2>
-        </div>
-    )
-}
+        <>
+          {showPDF ? (
+            <div className="pdfContainer">
+              <object
+                aria-label="pdf resume"
+                width="100%"
+                height="800"
+                data={PDF}
+                type="application/pdf"
+              />
+            </div>
+          ) : (
+            <div className='buttonContainer'>
+              <button onClick={handleClick} className='resumeButton'>
+                Download Resume
+              </button>
+            </div>
+          )}
+        </>
+      );
+    };

@@ -1,39 +1,62 @@
 .navName{
   color: #dad7cd;
-  text-shadow: 5px 5px 5px black;
+  text-shadow: 2px 2px 2px rgb(14, 13, 13);
 }
 .nav-bar{
   display: flex;
-  background-color: #4d7460;
+  background-image: url('./assets/images/sky.jpg');
   justify-content: space-between;
 }
 .nav-bar .navLinks a.nav-link {
-  color: #dad7cd;
+  color: #fcfbf9;
 }
 
-a.nav-link:hover {
-  text-shadow: 10px 10px 10px black;
+.navLinks:hover {
+  text-shadow: 10px 10px 10px rgb(150, 150, 150);
+}
+
+a.nav-link.active{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.aboutMeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
 }
 
 .aboutMePage {
-  background-color: #4d7460;
+  background-color: #241ed6;
   color: #dad7cd;
-  justify-content: center;
   padding: 50px;
-  margin: 100px;
-  box-shadow: 10px 10px 10px black;
+  box-shadow: 10px 10px 10px rgb(41, 41, 41);
+  max-width: 50%;
+  margin: 20px;
 }
 
 .aboutHeader {
   text-align: center;
 }
 
+.aboutImage {
+  width: 50%; 
+  margin: 20px;
+  box-shadow: 10px 10px 10px rgb(41, 41, 41);
+}
+
+.aboutMePage:hover {
+  transform: scale(1.1);
+}
+
 #root, html {
-  background-color: #8B9094;
+  background-color: black;
 }
 
 footer {
-  background-color: #4d7460;
+  background-color: black;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -54,15 +77,84 @@ footer {
   justify-content: center;
 }
 
-body.no-scroll {
-  overflow: hidden;
-}
 
 .contactForm {
-  background-color: #4d7460;
   color: #dad7cd;
   justify-content: center;
   padding: 20px;
   margin: 50px;
   box-shadow: 10px 10px 10px black;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  color: #dad7cd;
+  padding: 20px;
+  margin: 50px;
+}
+
+.projects {
+  color: rgb(207, 207, 207);
+  font-weight: bold;
+  background-size: contain;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  text-shadow: 3px 3px 2px rgb(14, 13, 13);
+}
+
+.projects:hover {
+  transform: scale(1.1);
+}
+
+.projectLinks{
+  color: rgb(207, 207, 207);
+  text-decoration: none;
+  text-shadow: 3px 3px 2px rgb(14, 13, 13);
+}
+
+.projectImage {
+  width: 300px;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  box-shadow: 10px 10px 10px rgb(46, 46, 46);
+}
+
+.resumeButton {
+  background-color: #332de9;
+  color: #dad7cd;
+  padding: 15px 30px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.resumeButton:hover {
+  background-color: #1f1b7a;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  margin: 400px;
+}
+
+@media only screen and (max-width: 767px) {
+  .aboutMePage,
+  .projects-container {
+    margin: 20px;
+    padding: 10px;
+    box-shadow: none;
+    justify-content: center;
+  }
 }
