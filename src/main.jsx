@@ -6,7 +6,6 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import About from './pages/About';
-import Contact from './pages/Contact';
 import Portfolio from './pages/Portfolio';
 import Resume from './pages/Resume';
 import Home from './pages/Home';
@@ -23,10 +22,6 @@ const router = createBrowserRouter([
       {
         path: '/About',
         element: <About />,
-      },
-      {
-        path: '/Contact',
-        element: <Contact />,
       },
       {
         path: '/Portfolio',

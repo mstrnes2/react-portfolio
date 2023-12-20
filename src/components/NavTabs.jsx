@@ -61,7 +61,6 @@ function NavTabs() {
                                 <NavLink to="/About" label="About" />
                                 <NavLink to="/Portfolio" label="Portfolio" />
                                 <NavLink to="/Resume" label="Resume" />
-                                <NavLink to="/Contact" label="Contact" />
                             </Nav>
                         </Navbar.Collapse>
                     </Container>

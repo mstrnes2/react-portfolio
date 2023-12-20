@@ -1,4 +1,4 @@
-import PDF from '../assets/MollyResume.pdf';
+import PDF from '../assets/StarnesMolly12.2.2023.pdf';
 import { useState } from 'react';
 
 export default function Resume() {

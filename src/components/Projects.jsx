@@ -15,7 +15,7 @@ function Project({ project }) {
         <div className="projects" style={backgroundImageStyle}>
         <div className="projectImage">
             <h1>
-            <NavLink to={`/projects/${name}`} className='projectLinks' activeClassName="active">
+            <NavLink to={link} className='projectLinks' activeClassName="active">
                 {name}
             </NavLink>{' '}
             <a href={repo}>
